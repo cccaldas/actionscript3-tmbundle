@@ -113,7 +113,7 @@ Builds the currently active project. The project needs to be correctly configure
 Attempts to open or execute `TM_FLEX_RUN_FILE`, `TM_FLEX_OUTPUT`, `TM_PROJECT_DIRECTORY/deploy/index.html`, or `TM_FILEPATH.swf`.
 
 ## Build & Run
-**Target:** Active Project
+**Target:** Active Project  
 **Key Equivalent:** ⇧⌘R  
 Execute Build, Run Commands.
 
