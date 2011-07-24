@@ -85,19 +85,19 @@ For Bundle conventions please follow the TextMate [conventions][tm_conventions].
 ## Auto Complete
 
 **Target:** Current Line  
-**Key Equivalent:**  ⌃ + Space 
+**Key Equivalent:**  ⌃␣  
 Currently in an experimental state but **may** provide full auto completion based on the current property chain.
 
 ## Auto Complete Function
 
 **Target:** Current Word  
-**Key Equivalent:**  ⌥⎋  
+**Key Equivalent:**  ⌃␣  
 Attempts to auto complete the function you have partially typed.
 
 ## Auto Complete Import
 
 **Target:** Current Word  
-**Key Equivalent:**  ⌥⎋  
+**Key Equivalent:**  ⌃␣  
 Attempts to auto complete the import statement for the word you have partially typed.
 
 ## Build
