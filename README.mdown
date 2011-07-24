@@ -106,6 +106,17 @@ Attempts to auto complete the import statement for the word you have partially t
 **Key Equivalent:**  ⌘B  
 Builds the currently active project. The project needs to be correctly configured by setting the `TM_FLEX_FILE_SPECS` and `TM_FLEX_OUTPUT` environmental variables. See the configuration options below.
 
+## Run
+
+**Target:** Current Project or Document  
+**Key Equivalent:**	⌘R  
+Attempts to open or execute `TM_FLEX_RUN_FILE`, `TM_FLEX_OUTPUT`, `TM_PROJECT_DIRECTORY/deploy/index.html`, or `TM_FILEPATH.swf`.
+
+## Build & Run
+**Target:** Current Project or Document  
+**Key Equivalent:** ⇧⌘R  
+Execute Build, Run Commands.
+
 ## Compile Current Class
 
 **Target:** Selected file or the active file if it doesn't belong to a project.  
@@ -153,12 +164,6 @@ Attempts to locate the class the caret is currently on and open it.
 **Target:** Current Document  
 **Key Equivalent:**	⇧⌃I  
 Removes any import statements who's class is *not referenced* elsewhere in the document. Please note that wildcarded.* packages are not removed and that packages containing more than one class will not work.
-
-## Run
-
-**Target:** Current Project or Document  
-**Key Equivalent:**	⌘R  
-Attempts to open or execute `TM_FLEX_RUN_FILE`, `TM_FLEX_OUTPUT`, `TM_PROJECT_DIRECTORY/deploy/index.html`, or `TM_FILEPATH.swf`.
 
 # Configuration Options
 
