@@ -7,73 +7,42 @@
 package ${TM_CLASS_PATH}
 {
 
-import flash.events.EventDispatcher;
-
-/**
- * Singleton.
- * 
- * @langversion ActionScript 3.0
- * @playerversion Flash 9.0
- * 
- * @author ${TM_FULLNAME}
- * @since  ${TM_DATE}
- */
-public class ${TM_NEW_FILE_BASENAME} extends EventDispatcher
-{
-	
-	//--------------------------------------
-	// CLASS CONSTANTS
-	//--------------------------------------
-	
-	private static var _instance:${TM_NEW_FILE_BASENAME};
-	
-	public static function get instance():${TM_NEW_FILE_BASENAME}
-	{
-		return initialize();
-	}
-	
-	public static function initialize():${TM_NEW_FILE_BASENAME}
-	{
-		if (_instance == null){
-			_instance = new ${TM_NEW_FILE_BASENAME}();
-		}
-		return _instance;
-	}
-	
-	//---------------------------------------
-	// CONSTRUCTOR
-	//---------------------------------------
-	
 	/**
-	 * @constructor
+	 * Singleton.
+	 * 
+	 * @langversion ActionScript 3.0
+	 * @playerversion Flash 9.0
+	 * 
+	 * @author ${TM_FULLNAME}
+	 * @since  ${TM_DATE}
 	 */
-	public function ${TM_NEW_FILE_BASENAME}()
+	public class ${TM_NEW_FILE_BASENAME}
 	{
-		super();
-		if( _instance != null ) throw new Error("Error:${TM_NEW_FILE_BASENAME} already initialised.");
-		if( _instance == null ) _instance = this;
+	
+		private static var _instance:${TM_NEW_FILE_BASENAME};
+	
+		public static function getInstance():${TM_NEW_FILE_BASENAME}
+		{
+			if (_instance == null)
+				_instance = new ${TM_NEW_FILE_BASENAME}(new SingletonEnforcer());
+			
+			return _instance;
+		}
+	
+		//---------------------------------------
+		// CONSTRUCTOR
+		//---------------------------------------
+	
+		/**
+		 * @constructor
+		 */
+		public function ${TM_NEW_FILE_BASENAME}(enforcer:SingletonEnforcer)
+		{
+			super();
+		}
+	
 	}
-	
-	//--------------------------------------
-	//  PRIVATE VARIABLES
-	//--------------------------------------
-	
-	//--------------------------------------
-	//  GETTER/SETTERS
-	//--------------------------------------
-	
-	//--------------------------------------
-	//  PUBLIC METHODS
-	//--------------------------------------
-	
-	//--------------------------------------
-	//  EVENT HANDLERS
-	//--------------------------------------
-	
-	//--------------------------------------
-	//  PRIVATE & PROTECTED INSTANCE METHODS
-	//--------------------------------------
-	
-}
 
 }
+
+class SingletonEnforcer {}
