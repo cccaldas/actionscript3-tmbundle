@@ -85,7 +85,7 @@ For Bundle conventions please follow the TextMate [conventions][tm_conventions].
 ## Auto Complete
 
 **Target:** Current Line  
-**Key Equivalent:**  ⌥⎋  
+**Key Equivalent:**  ⌃ + Space 
 Currently in an experimental state but **may** provide full auto completion based on the current property chain.
 
 ## Auto Complete Function
