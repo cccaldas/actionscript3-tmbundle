@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>stage.align 		= StageAlign.TOP_LEFT;
+stage.scaleMode 	= StageScaleMode.NO_SCALE;</string>
+	<key>name</key>
+	<string>stage</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>stage</string>
+	<key>uuid</key>
+	<string>B86C531A-9C1C-4078-97B8-99C0C59B27B0</string>
+</dict>
+</plist>
