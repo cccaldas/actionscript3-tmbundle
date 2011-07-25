@@ -14,10 +14,16 @@
 
 		<!-- Example library linkage -->
 
-		<!-- for swc's
+		<!-- for builtin swc's
 		<library-path append="true">
 			<path-element>../lib/bin/</path-element>
 		</library-path>
+		-->
+		
+		<!-- for external swc's
+		<external-library-path append="true">
+	      <path-element>../lib/skin/</path-element>
+	    </external-library-path>
 		-->
 		
 		<!-- for src
