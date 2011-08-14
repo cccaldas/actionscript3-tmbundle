@@ -1,4 +1,5 @@
 <flex-config>
+	<target-player>10.0</target-player>
 	<benchmark>false</benchmark>
 	<default-background-color>#FFFFFF</default-background-color>
 	<compiler>
