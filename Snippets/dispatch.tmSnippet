@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>dispatchEvent(new ${1:Event}(${1:Event}.${2/^.+$/\U$0\E/g})); // ${2:CLICK}
+	<string>dispatchEvent(new ${1:Event}(${1:Event}.${3:CLICK})); // $3
 </string>
 	<key>name</key>
 	<string>dispatchEvent</string>
