@@ -12,21 +12,6 @@ Features:
  * Class and Component Templates.
  * Shortcut's to open Super Class, Code Behind and Import file.
 
-## sg Branch
-
-My work in progress branch of the bundle, the version I use on a day to day basis
-whilst developing. Essentially it slims down the 'master' branch and adds a 
-little alpha and beta flavour. Maintenance, tweaks and feature improvements will 
-be found here first - but won't be guaranteed to make it into the official bundle.
-
-'master' differences:
-
- * FCSH build integrated into TM. 
- * Tidy command.
- * FDB Support
-    * Set breakpoints using  `/*>BP<*/`
-    * Start Debugger - Parses current doc for breakpoints and sets them in a fdb session.
-
 # Installation
 
 Via download:
@@ -40,7 +25,7 @@ Via download:
 To install via Git:
 
 		cd ~/"Library/Application Support/TextMate/Bundles/"
-		git clone git://github.com/cccaldas/actionscript3-tmbundle.git "ActionScript 3.tmbundle"
+		git clone git://github.com/simongregory/actionscript3-tmbundle.git "ActionScript 3.tmbundle"
 		osascript -e 'tell app "TextMate" to reload bundles'
 
 Source can be viewed and forked via [GitHub][repo_master]
@@ -85,19 +70,19 @@ For Bundle conventions please follow the TextMate [conventions][tm_conventions].
 ## Auto Complete
 
 **Target:** Current Line  
-**Key Equivalent:**  ⌃␣  
+**Key Equivalent:**  ⌥⎋  
 Currently in an experimental state but **may** provide full auto completion based on the current property chain.
 
 ## Auto Complete Function
 
 **Target:** Current Word  
-**Key Equivalent:**  ⌃␣  
+**Key Equivalent:**  ⌥⎋  
 Attempts to auto complete the function you have partially typed.
 
 ## Auto Complete Import
 
 **Target:** Current Word  
-**Key Equivalent:**  ⌃␣  
+**Key Equivalent:**  ⌥⎋  
 Attempts to auto complete the import statement for the word you have partially typed.
 
 ## Build
@@ -105,17 +90,6 @@ Attempts to auto complete the import statement for the word you have partially t
 **Target:** Active Project  
 **Key Equivalent:**  ⌘B  
 Builds the currently active project. The project needs to be correctly configured by setting the `TM_FLEX_FILE_SPECS` and `TM_FLEX_OUTPUT` environmental variables. See the configuration options below.
-
-## Run
-
-**Target:** Current Project or Document  
-**Key Equivalent:**	⌘R  
-Attempts to open or execute `TM_FLEX_RUN_FILE`, `TM_FLEX_OUTPUT`, `TM_PROJECT_DIRECTORY/deploy/index.html`, or `TM_FILEPATH.swf`.
-
-## Build & Run
-**Target:** Active Project  
-**Key Equivalent:** ⇧⌘R  
-Execute Build, Run Commands.
 
 ## Compile Current Class
 
@@ -165,6 +139,12 @@ Attempts to locate the class the caret is currently on and open it.
 **Key Equivalent:**	⇧⌃I  
 Removes any import statements who's class is *not referenced* elsewhere in the document. Please note that wildcarded.* packages are not removed and that packages containing more than one class will not work.
 
+## Run
+
+**Target:** Current Project or Document  
+**Key Equivalent:**	⌘R  
+Attempts to open or execute `TM_FLEX_RUN_FILE`, `TM_FLEX_OUTPUT`, `TM_PROJECT_DIRECTORY/deploy/index.html`, or `TM_FILEPATH.swf`.
+
 # Configuration Options
 
 These environment variables allow you to define or customise the behaviour of 
@@ -195,9 +175,6 @@ execute to override default run behaviour (triggered by  ⌘R).
 * `TM_ORGANIZATION_NAME`  
 Name used in copyright notices in most templates.
 
-* `TM_COPYRIGHT_RIGHTS`
-The copyright rights statement. Defaults to 'All rights reserved.' when not set.
-
 * `TM_ASDOC_GENERATION`  
 If you would like asdoc blocks automatically inserted when using commands,
 snippets, and templates then enable this variable and set this value to anything.
@@ -209,10 +186,9 @@ To have code banners inserted into the class templates set the value of this
 variable to anything.
 
 * `TM_FLEX_USE_FCSH`  
-To compile using fcsh via the Terminal.app set this property to anything. To use
-a custom TextMate integrated server for fcsh then set it to 'fcshd'. Either
-option will give you the added benefit of compiler caching and should be 
-noticeably faster, especially on larger projects.
+Set this property to anything if you wish to compile using fcsh. This will give
+you the added benefit of compiler caching and should be noticeably faster, 
+especially on larger projects.
 
 * `TM_FLEX_BACKGROUND_TERMINAL`  
 If you are compiling using fcsh and the terminal setting this to anything will
@@ -257,8 +233,7 @@ Chris Jenkins
 Christian Swinehart  
 ChromaticRain  
 [Daniel Parnell][daniel_parnell]  
-[Gabriel Laet][gabriel_laet]
-[Jeremy Ruppel][jeremy_ruppel]  
+[Gabriel Laet][gabriel_laet]  
 [Jeremy Sachs][jeremy_sachs]  
 [Joachim][joachim]  
 [Kristofer Joseph][kristoferjoseph]  
@@ -315,17 +290,15 @@ An exception is made for files in readable text which contain their own license 
 [flex_docs_zip]: http://www.adobe.com/go/flex_documentation_zip
 [flash_player_archive]: http://www.adobe.com/go/tn_14266
 
-[daniel_parnell]: http://blog.danielparnell.com/?p=22
-[gabriel_laet]: http://github.com/gabriel-laet
-[jeremy_ruppel]: http://github.com/jeremyruppel
-[jeremy_sachs]: http://www.rezmason.net/
-[joachim]: http://www.4d.be/
-[kristoferjoseph]: http://github.com/kristoferjoseph
-[leo_soto]: http://code.google.com/p/flex-compiler-shell-daemon/
-[lucasdupin]: http://github.com/lucasdupin
-[luke_daley]: http://github.com/alkemist
-[mark_llobrera]: http://www.dirtystylus.com/blog/
-[specialunderwear]: http://github.com/specialunderwear
-[theo]: http://blog.iconara.net/2007/02/23/textmate-flex-tips/
 [thomas_aylott]: http://subtlegradient.com/
-
+[theo]: http://blog.iconara.net/2007/02/23/textmate-flex-tips/
+[mark_llobrera]: http://www.dirtystylus.com/blog/
+[joachim]: http://www.4d.be/
+[daniel_parnell]: http://blog.danielparnell.com/?p=22
+[specialunderwear]: http://github.com/specialunderwear
+[kristoferjoseph]: http://github.com/kristoferjoseph
+[lucasdupin]: http://github.com/lucasdupin
+[gabriel_laet]: http://github.com/gabriel-laet
+[leo_soto]: http://code.google.com/p/flex-compiler-shell-daemon/
+[jeremy_sachs]: http://www.rezmason.net/
+[luke_daley]: http://github.com/alkemist
