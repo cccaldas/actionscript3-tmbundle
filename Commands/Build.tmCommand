@@ -11,7 +11,18 @@
 # If you wish to use FCSH, and benifit from it's caching, then set an env var TM_FLEX_USE_FCSH to anything.
 # I'd also recommend that you set the command Output (below) to 'Discard'
 
+if [ -f "$TM_PROJECT_DIRECTORY/build/before.sh" ];
+then
+	"$TM_PROJECT_DIRECTORY/build/before.sh"
+fi
+
 build
+
+if [ -f "$TM_PROJECT_DIRECTORY/build/after.sh" ];
+then
+	"$TM_PROJECT_DIRECTORY/build/after.sh"
+fi
+
 </string>
 	<key>input</key>
 	<string>none</string>
