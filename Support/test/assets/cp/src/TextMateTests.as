@@ -54,7 +54,6 @@ public class TextMateTests extends Sprite
 		var b:ISimpleExtender = new Object();
 
         //Manual completion tests
-
 		b.
 		b.simp
 		b.simpleEx

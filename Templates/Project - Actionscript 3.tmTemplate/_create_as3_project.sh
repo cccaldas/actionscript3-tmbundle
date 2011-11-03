@@ -88,6 +88,7 @@ if [ -n "$fullProjectPath" ]; then
 		mkdir "$projectPath/$projectName/deploy/js";
 		cp "swfaddress.js" "$projectPath/$projectName/deploy/js/swfaddress.js";
 		cp "swfobject.js" "$projectPath/$projectName/deploy/js/swfobject.js";
+		cp "expressInstall.swf" "$projectPath/$projectName/deploy/expressInstall.swf";
 		
 		# Open the project in TextMate.
 		open -a "TextMate.app" "$projectPath/$projectName/$projectName.tmproj";
