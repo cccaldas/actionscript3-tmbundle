@@ -6,7 +6,8 @@
 	<string>saveModifiedFiles</string>
 	<key>command</key>
 	<string>build
-run</string>
+#run
+open $TM_PROJECT_DIRECTORY/$TM_FLEX_OUTPUT;</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
