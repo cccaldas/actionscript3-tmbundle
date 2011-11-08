@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#run
 
-open $TM_PROJECT_DIRECTORY/$TM_FLEX_OUTPUT;</string>
+open $TM_PROJECT_DIRECTORY/$TM_FLEX_RUN_FILE;</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>

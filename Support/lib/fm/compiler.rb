@@ -215,15 +215,17 @@ class MxmlcCommand
   attr_reader :file_specs
   attr_reader :o
   attr_reader :name
+  attr_reader :custom_arguments
 
   def initialize(settings)
     @name = 'mxmlc'
     @o = settings.flex_output
     @file_specs = settings.file_specs
+    @custom_arguments = ENV['TM_CUSTOM_ARGUMENTS']
   end
 
   def line
-    "#{name} -file-specs=#{e_sh file_specs} -o=#{e_sh o}"
+    "#{name} #{custom_arguments} -file-specs=#{e_sh file_specs} -o=#{e_sh o}"
   end
 
   def file_specs_name
