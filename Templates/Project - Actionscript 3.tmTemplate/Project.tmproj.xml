@@ -114,6 +114,14 @@
 			<key>variable</key>
 			<string>TM_FLEX_RUN_FILE</string>
 		</dict>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>value</key>
+			<string></string>
+			<key>variable</key>
+			<string>TM_CUSTOM_ARGUMENTS</string>
+		</dict>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
